@@ -1,0 +1,161 @@
+﻿body {
+    background-color:#F4ED6E;
+}
+head {
+    background-image:url("slike/istockphoto-1299726583-170667a.jpg");
+}
+.tekst1 {
+    font-size:larger;
+    font-style:italic;
+    text-shadow:1px 1px silver;
+    text-align: center;
+    padding: 20px 100px;
+    background-color:chocolate;
+}
+.tekst2 {
+    color:white;
+    font-size:x-large;
+    text-align: center;
+    padding: 10px 100px;
+    text-shadow:1px 1px silver;
+    border: 2px solid black;
+    position:relative;
+    animation-name:expressanimacija;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+}
+@keyframes expressanimacija 
+{
+    0% {background-color:indigo; left:0px; top:0px;}
+    20% {background-color:red; left:200px; top:0px;}
+    40% {background-color:blue; left:0px; top:0px;}
+    60% {background-color:silver; right:0px; top:0px;}
+    80% {background-color:yellow; right:200px; top:0px;}
+   100% {background-color:green; right:0px; top:0px;}
+
+}
+.logo img {
+    text-align: center;
+    margin-left:10px;
+    padding:15px;
+    width:10%;
+    height:100px;
+    display:block;
+    float:left;
+}
+@font-face {
+    font-family:NEWW;
+    src:url("Font/Arcane Nine.otf");
+}
+p {
+    font-family:NEWW;
+    padding:2px;
+}
+.kontakt {
+    font-family:NEWW;
+    padding:5px;
+    border:3px dashed black;
+}
+.stranice
+{
+      overflow:hidden;
+      text-align: center;
+}
+.stranice a
+{
+  background-color:red;
+  color: white;
+  padding: 14px 25px;
+  float:left;
+  text-decoration: none;
+  border: 5px solid black;
+  border-radius:15px 50px 20px;
+  font-family:NEWW;
+
+}
+.stranice a:hover {
+  background-color:blue;
+  color: black;
+  text-decoration: none;
+  border: 5px solid white;
+  box-shadow: 10px 10px 30px red;
+}
+.stranice a:active {
+    box-shadow: 10px 10px 30px blue;
+}
+.linkovi a{
+
+    }
+form {
+
+}
+input[type="text"], input[type="email"], input[type="password"] {
+    display:block;
+    width:400px;
+    height:30px;
+    margin-bottom:20px;
+    border: 1px solid black;
+    border-radius:15px 50px 20px;
+    letter-spacing:2px;
+    font-family:NEWW;
+    padding:0px 30px;
+}
+input[type="submit"], input[type="reset"] {
+    height:35px;
+    width: 130px;
+    margin: 0px 40px;
+    letter-spacing:2px;
+    border: 2px solid black;
+    font-family:NEWW;
+    padding:0px 30px;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover {
+-webkit-box-shadow: 13px 9px 19px 5px #000000; 
+box-shadow: 13px 9px 19px 5px #000000;
+}
+
+input[type="submit"]:hover{
+    background-color:green;
+    color:white;
+    font-weight:bold;
+    transition:0.7s;
+    border-radius:15px 50px 20px;
+}
+
+input[type="reset"]:hover {
+    background-color:red;
+    color:white;
+    font-weight:bold;
+    transition:0.7s;
+    border-radius:15px 50px 20px;
+}
+
+.instrumenti img {
+    text-align: center;
+    margin-left:10px;
+    padding:15px;
+    width:300px;
+    height:200px;
+    float:left
+}
+
+
+.instrumenti2rotate img {
+    text-align: center;
+    margin-left:10px;
+    padding:15px;
+    width:300px;
+    height:200px;
+    transform:rotate(-35deg);
+    float:left;
+}
+@media screen and (max-width:600px) {
+    body {
+        background-color:aqua;
+    }
+
+    .stranice {
+        width:100%;
+    }
+}
